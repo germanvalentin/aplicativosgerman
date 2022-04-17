@@ -15,6 +15,10 @@ const routes: Routes = [
     path: 'pages',
     loadChildren: () => import('./pages/pages.module').then( m => m.PagesPageModule)
   },
+  {
+    path: 'toast',
+    loadChildren: () => import('./pages/toast/toast.module').then( m => m.ToastPageModule)
+  },
 ];
 
 @NgModule({
